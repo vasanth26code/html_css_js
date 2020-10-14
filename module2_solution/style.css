@@ -1,0 +1,102 @@
+.menu{
+	text-align: center;
+	margin-top: 5%
+	margin-bottom: 5%
+}
+.content1{
+	background-color: grey;
+	grid-area: header;
+	border: 3px solid black;
+}
+.content2{
+	background-color: grey;
+	grid-area: advert;
+	border: 3px solid black;
+}
+.content3{
+	background-color: grey;
+	grid-area: content;
+	border: 3px solid black;
+}
+.item1{
+	border: 3px solid black;
+    width: 25%;
+    text-align: center;
+    background-color: pink;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.item2 {
+    border: 3px solid black;
+    width: 25%;
+    text-align: center;
+    background-color: rgba(231, 60, 60, 0.781);
+    color: white;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.item3 {
+    border: 3px solid black;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(241, 241, 126);
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.container-fluid{
+	font-size: 1.5em;
+    min-height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "header advert content";
+}
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "advert advert"
+            "content content";
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "header header"
+            "advert advert"
+            "content content";
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "header advert"
+            "content content";
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header advert content";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "header advert content";
+    }
+}
